@@ -1,0 +1,20 @@
+{
+  "name": "moneypot-lottery",
+  "version": "0.0.1",
+  "description": "Utilities for the MoneyPot lottery",
+  "main": "index.js",
+  "scripts": {
+    "start": "env $(cat .env | xargs) node --harmony index.js",
+    "list-transactions": "env $(cat .env | xargs) node --harmony cli-list-transactions.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bignum": "^0.10.2",
+    "co": "^4.6.0",
+    "co-request": "^0.2.1",
+    "debug": "^2.2.0",
+    "lodash": "^3.10.0"
+  }
+}
